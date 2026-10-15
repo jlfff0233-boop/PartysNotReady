@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950"><rect width="1500" height="950" fill="white"/>
+<text x="750" y="35" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="31" font-weight="700" fill="#243347">경로 계산은 공유하고, 도주 경로 선정 조건은 구분</text>
+<text x="345" y="99" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">수정 전</text>
+<text x="1125" y="99" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">수정 후</text>
+<text x="345" y="139" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#5d6c7e">개발 기록의 여우 조건 적용 시도</text>
+<text x="1125" y="139" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#5d6c7e">현재 담비의 거리 기준</text>
+<polyline points="750,90 750,868" fill="none" stroke="#e0e6ed" stroke-width="1" stroke-linejoin="round"/>
+<rect x="160" y="200" width="370" height="76" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="345.0" y="238.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">담비의 도주 경로 요청</text>
+<rect x="115" y="355" width="460" height="112" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="345.0" y="391.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">입구 반대 방향으로 우회</text>
+<text x="345.0" y="430.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">특정 접근 노드 재방문 제한</text>
+<rect x="100" y="595" width="490" height="112" rx="9" fill="#fbefee" stroke="#d7e0e9"/>
+<text x="345.0" y="631.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#243347">현관까지 연결돼 있어도</text>
+<text x="345.0" y="670.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#243347">우회 조건에 맞지 않으면 후보 탈락</text>
+<polyline points="345,276 345,355" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="345,355 340.9223954694043,345.8691105968769 349.0776045305957,345.8691105968769" fill="#8b99a9"/>
+<polyline points="345,467 345,595" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="345,595 340.9223954694043,585.8691105968769 349.0776045305957,585.8691105968769" fill="#8b99a9"/>
+<rect x="915" y="200" width="420" height="76" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="1125.0" y="238.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">현관까지 기본 경로 검사</text>
+<rect x="965" y="345" width="320" height="74" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="1125.0" y="382.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">최소 거리 충족?</text>
+<polyline points="1125,276 1125,345" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1125,345 1120.9223954694044,335.8691105968769 1129.0776045305956,335.8691105968769" fill="#8b99a9"/>
+<rect x="795" y="505" width="310" height="92" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="950.0" y="551.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">기본 경로 사용</text>
+<rect x="1150" y="505" width="310" height="92" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="1305.0" y="531.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">경유 경로 탐색</text>
+<text x="1305.0" y="570.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">재방문 허용</text>
+<polyline points="1010,419 1010,455 950,455 950,505" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="950,505 945.9223954694043,495.8691105968769 954.0776045305957,495.8691105968769" fill="#8b99a9"/>
+<text x="910" y="454" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">충족</text>
+<polyline points="1240,419 1240,455 1305,455 1305,505" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1305,505 1300.9223954694044,495.8691105968769 1309.0776045305956,495.8691105968769" fill="#8b99a9"/>
+<text x="1350" y="454" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">짧음</text>
+<rect x="795" y="756" width="310" height="100" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="950.0" y="786.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#243347">거리 조건을 만족하는</text>
+<text x="950.0" y="825.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#243347">경로 선택</text>
+<rect x="1150" y="756" width="310" height="100" rx="9" fill="#fbefee" stroke="#d7e0e9"/>
+<text x="1305.0" y="786.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">후보 없음</text>
+<text x="1305.0" y="825.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">도주 실패</text>
+<polyline points="950,597 950,756" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="950,756 945.9223954694043,746.8691105968769 954.0776045305957,746.8691105968769" fill="#8b99a9"/>
+<polyline points="1305,597 1305,672 1055,672 1055,756" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1055,756 1050.9223954694044,746.8691105968769 1059.0776045305956,746.8691105968769" fill="#8b99a9"/>
+<text x="1175" y="645" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">후보 있음</text>
+<polyline points="1305,672 1395,672 1395,756" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1395,756 1390.9223954694044,746.8691105968769 1399.0776045305956,746.8691105968769" fill="#8b99a9"/>
+<text x="1270" y="718" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">후보 없음</text>
+<text x="750" y="914" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">기본 / 경유 경로 모두 실제 통행 가능 여부와 이동 거리 상한 검사</text>
+</svg>

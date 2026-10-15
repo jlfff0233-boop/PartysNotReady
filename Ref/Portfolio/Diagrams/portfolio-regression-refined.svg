@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="160" viewBox="0 0 1320 160"><rect width="1320" height="160" fill="white"/>
+<rect x="35" y="40" width="235" height="80" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="152.5" y="80.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">기능 구현</text>
+<rect x="315" y="40" width="285" height="80" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="457.5" y="80.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">해당 기능 검증</text>
+<polyline points="270,80 315,80" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="315,80 305.8691105968769,84.0776045305957 305.8691105968769,75.9223954694043" fill="#8b99a9"/>
+<rect x="645" y="40" width="285" height="80" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="787.5" y="80.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">최종 에셋 투입</text>
+<polyline points="600,80 645,80" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="645,80 635.8691105968769,84.0776045305957 635.8691105968769,75.9223954694043" fill="#8b99a9"/>
+<rect x="975" y="40" width="310" height="80" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="1130.0" y="80.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">즉시 회귀 검증</text>
+<polyline points="930,80 975,80" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="975,80 965.8691105968769,84.0776045305957 965.8691105968769,75.9223954694043" fill="#8b99a9"/>
+</svg>

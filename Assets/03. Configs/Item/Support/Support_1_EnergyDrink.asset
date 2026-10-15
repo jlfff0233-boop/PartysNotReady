@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f02190ddf876c64fb6abdf1ff72358f, type: 3}
+  m_Name: Support_1_EnergyDrink
+  m_EditorClassIdentifier: 
+  _itemName: "\uC5D0\uB108\uC9C0 \uB4DC\uB9C1\uD06C"
+  _id: Support_1_EnergyDrink
+  _icon: {fileID: 21300000, guid: 4dc28aaaa9975364a89b179af19cc1ea, type: 3}
+  _cost: 2
+  _description: "\uC77C\uC2DC\uC801\uC73C\uB85C \uC774\uB3D9 \uC18D\uB3C4\uAC00 \uBE68\uB77C\uC9C4\uB2E4.
+    2\uD68C \uC0AC\uC6A9 \uC2DC \uD30C\uAD34."
+  _useCount: 2
+  _duration: 2
+  _multiplier: 1.5

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5c92c4f65ae314a8674b39de2356b3, type: 3}
+  m_Name: Recipe_8_StrawberrySandwich
+  m_EditorClassIdentifier: 
+  _recipeId: Recipe_8_StrawberrySandwich
+  _resultItem: {fileID: 11400000, guid: c17bc47b5c3c8a74a82c6d97e3d1849f, type: 2}
+  _ingredients:
+  - _item: {fileID: 11400000, guid: fac6a56c96a97b843bf86b3d74615feb, type: 2}
+    _requiredCount: 2
+  - _item: {fileID: 11400000, guid: 7bda12c43ec01144fa38ba2c356580eb, type: 2}
+    _requiredCount: 2
+  _resultPrefab: {fileID: 6045859463283967389, guid: 145fcb5d98194d5aaa36881003cc1bc0, type: 3}
+  _produceMinigame: {fileID: 11400000, guid: 041d9e322270d5a419c8060ff2f81202, type: 2}

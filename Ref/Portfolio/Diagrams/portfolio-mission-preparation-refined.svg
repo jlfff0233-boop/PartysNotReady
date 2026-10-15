@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="770" viewBox="0 0 1120 770"><rect width="1120" height="770" fill="white"/>
+<rect x="430" y="25" width="260" height="70" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="560.0" y="60.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">음식 정상 배치</text>
+<rect x="55" y="165" width="380" height="78" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="245.0" y="204.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">Mission 완료 이력 기록</text>
+<rect x="635" y="165" width="430" height="98" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="850.0" y="194.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">Preparation</text>
+<text x="850.0" y="233.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">현재 유효 수량 증가</text>
+<polyline points="495,95 495,125 245,125 245,165" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="245,165 240.9223954694043,155.8691105968769 249.0776045305957,155.8691105968769" fill="#8b99a9"/>
+<polyline points="625,95 625,125 850,125 850,165" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="850,165 845.9223954694043,155.8691105968769 854.0776045305957,155.8691105968769" fill="#8b99a9"/>
+<rect x="55" y="320" width="380" height="112" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="245.0" y="356.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="700" fill="#243347">탈취 후에도 이력 유지</text>
+<text x="245.0" y="395.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="700" fill="#243347">같은 음식 결과 재반영 방지</text>
+<polyline points="245,243 245,320" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="245,320 240.9223954694043,310.8691105968769 249.0776045305957,310.8691105968769" fill="#8b99a9"/>
+<rect x="745" y="320" width="210" height="66" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="850.0" y="353.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">포식자 탈취</text>
+<polyline points="850,263 850,320" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="850,320 845.9223954694043,310.8691105968769 854.0776045305957,310.8691105968769" fill="#8b99a9"/>
+<rect x="680" y="437" width="340" height="66" rx="9" fill="#fbefee" stroke="#d7e0e9"/>
+<text x="850.0" y="470.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">현재 유효 수량 감소</text>
+<polyline points="850,386 850,437" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="850,437 845.9223954694043,427.8691105968769 854.0776045305957,427.8691105968769" fill="#8b99a9"/>
+<rect x="680" y="554" width="340" height="66" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="850.0" y="587.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">음식 복구 / 재정착</text>
+<polyline points="850,503 850,554" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="850,554 845.9223954694043,544.8691105968769 854.0776045305957,544.8691105968769" fill="#8b99a9"/>
+<rect x="680" y="671" width="340" height="66" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="850.0" y="704.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">Preparation 회복</text>
+<polyline points="850,620 850,671" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="850,671 845.9223954694043,661.8691105968769 854.0776045305957,661.8691105968769" fill="#8b99a9"/>
+</svg>

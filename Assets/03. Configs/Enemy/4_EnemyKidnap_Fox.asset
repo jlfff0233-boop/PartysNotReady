@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb56eb1302780094ea90f47b2d67dd12, type: 3}
+  m_Name: 4_EnemyKidnap_Fox
+  m_EditorClassIdentifier: 
+  _hideDuration: 3
+  _searchInterval: 1
+  _searchDist: 15
+  _npcTargetChance: 0.75
+  _chaseSpeed: 3
+  _rotateSpeed: 360
+  _chaseTimeLimit: 15
+  _sampleDist: 1
+  _refreshInterval: 0.3
+  _attackDist: 1
+  _attackHeight: 1
+  _arriveTolerance: 0.1
+  _attackDelay: 0.4
+  _hitDelay: 0
+  _attackDuration: 0.3
+  _rescueLimit: 3
+  _retaliationChance: 0.8
+  _moveRoomChance: 0.8
+  _escapeSpeed: 3.5
+  _escapeArriveDist: 0.3
+  _escapeConnectDist: 25
+  _escapeRetryInterval: 0.5
+  _escapeTimeLimit: 25
+  _escapeStuckTimeLimit: 2
+  _escapeArriveTolerance: 0.05

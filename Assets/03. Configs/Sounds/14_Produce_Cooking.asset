@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0056c2e5d0b96c34f8ed8a8772d717cd, type: 3}
+  m_Name: 14_Produce_Cooking
+  m_EditorClassIdentifier: 
+  _clips:
+  - {fileID: 8300000, guid: 3cc04c8eb783f964087585c4d4d94a98, type: 3}
+  - {fileID: 8300000, guid: 9c54dc6d8d999084994c07a7d3b7f386, type: 3}
+  _volumeRange: {x: 0.2, y: 1}
+  _pitchRange: {x: 1, y: 1}
+  _cooldown: 0
+  _outputGroup: {fileID: 0}

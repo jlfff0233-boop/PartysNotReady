@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8472bea9fb04b43b8439412e022d59, type: 3}
+  m_Name: '!_MissionMap_Stage_3_FoodPlacement'
+  m_EditorClassIdentifier: 
+  _name: "\uC74C\uC2DD \uBC30\uCE58"
+  _missions:
+  - {fileID: 11400000, guid: e4d08a07484c73b4091b12054576090a, type: 2}
+  - {fileID: 11400000, guid: bc3f53faba77842488fd3380b1daafa4, type: 2}
+  - {fileID: 11400000, guid: 0403df623a665f947ba2c5e131119416, type: 2}
+  - {fileID: 11400000, guid: fd68090918997e4458084f83afa90fbd, type: 2}
+  - {fileID: 11400000, guid: bd3183ac31df8e5409729a85968c5eac, type: 2}
+  - {fileID: 11400000, guid: de73b36c0119cf74aacab048c0c1fa06, type: 2}
+  - {fileID: 11400000, guid: a900dc19b0121464884069ab2543761c, type: 2}
+  - {fileID: 11400000, guid: ddfd715a1ac212943a06d4975b65c94a, type: 2}
+  - {fileID: 11400000, guid: d3112765254a826428a6790d00d617e4, type: 2}
+  - {fileID: 11400000, guid: 09b99e659e8a0304a8c6d221c35e1484, type: 2}

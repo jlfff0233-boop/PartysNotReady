@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5c92c4f65ae314a8674b39de2356b3, type: 3}
+  m_Name: Recipe_9_FruitTart
+  m_EditorClassIdentifier: 
+  _recipeId: Recipe_9_FruitTart
+  _resultItem: {fileID: 11400000, guid: fbf189958c0b05d4b9406fe411a26744, type: 2}
+  _ingredients:
+  - _item: {fileID: 11400000, guid: 8c765550957fd4a4786a79679937f503, type: 2}
+    _requiredCount: 2
+  - _item: {fileID: 11400000, guid: 4dce9058c3d8c634b9974822b0c8836a, type: 2}
+    _requiredCount: 1
+  - _item: {fileID: 11400000, guid: 1904228877f13e840a87278c6a00a3b3, type: 2}
+    _requiredCount: 1
+  - _item: {fileID: 11400000, guid: 862c065c416a3bd41a00ffa9596686fc, type: 2}
+    _requiredCount: 1
+  - _item: {fileID: 11400000, guid: 7bda12c43ec01144fa38ba2c356580eb, type: 2}
+    _requiredCount: 1
+  - _item: {fileID: 11400000, guid: 3a97cee4b09676148b62b6a5447459e8, type: 2}
+    _requiredCount: 1
+  _resultPrefab: {fileID: 5085355346984347405, guid: bbedba5725c54662b1a35fec657494f6, type: 3}
+  _produceMinigame: {fileID: 11400000, guid: 041d9e322270d5a419c8060ff2f81202, type: 2}

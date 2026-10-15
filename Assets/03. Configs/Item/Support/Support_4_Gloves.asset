@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529639dad43d9db48b3d10c4b192f0ef, type: 3}
+  m_Name: Support_4_Gloves
+  m_EditorClassIdentifier: 
+  _itemName: "\uAD6C\uC870 \uC7A5\uAC11"
+  _id: Support_4_Gloves
+  _icon: {fileID: 21300000, guid: cbe4f536a5fc53948a7d07fee3699d74, type: 3}
+  _cost: 2
+  _description: "\uB354 \uBE60\uB974\uAC8C \uAD6C\uC870 \uAC00\uB2A5. 3\uD68C \uC0AC\uC6A9
+    \uC2DC \uD30C\uAD34."
+  _useCount: 3
+  _duration: 2
+  _multiplier: 2

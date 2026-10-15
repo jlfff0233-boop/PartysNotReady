@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4daa79444c87a47ab68a8132aa0aeb, type: 3}
+  m_Name: Food_3_StrawberryCake
+  m_EditorClassIdentifier: 
+  _itemName: "\uB538\uAE30 \uCF00\uC774\uD06C"
+  _capacityCost: 1
+  _foodId: Food_3_StrawberryCake
+  _category: 1
+  _size: 2
+  _satisfaction: 42
+  _placementType: 1

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd6bb9c8f6a9f84c9f9c30c374d2b2c, type: 3}
+  m_Name: 2_EnemyDemand_FeedbackProfile
+  m_EditorClassIdentifier: 
+  _eatSound: {fileID: 11400000, guid: 4d5c784e46863b442b8d2444afe68643, type: 2}
+  _satisfiedSound: {fileID: 11400000, guid: 813dab47769744d4d9ad206e9d2b5c83, type: 2}
+  _madSound: {fileID: 11400000, guid: 406047ee726ca6743b7bf12a236adea2, type: 2}
+  _attackSound: {fileID: 11400000, guid: 40996ae44880eb9418d0207c0d3099c5, type: 2}
+  _captureSound: {fileID: 11400000, guid: 86fcee28f22cfc044a6275db3cdce9c0, type: 2}

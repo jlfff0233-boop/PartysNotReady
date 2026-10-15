@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="520" viewBox="0 0 1440 520"><rect width="1440" height="520" fill="white"/>
+<text x="35" y="39" text-anchor="start" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="31" font-weight="700" fill="#243347">PlayScene</text>
+<text x="206" y="39" text-anchor="start" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="400" fill="#5d6c7e">· 한 판의 초기화와 시스템 연결</text>
+<polyline points="35,80 1405,80" fill="none" stroke="#dce3eb" stroke-width="1" stroke-linejoin="round"/>
+<rect x="35" y="145" width="300" height="74" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="185.0" y="182.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">제작 / 배치 시스템</text>
+<rect x="35" y="396" width="300" height="74" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="185.0" y="433.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">사건 / 포식자 / NPC</text>
+<rect x="575" y="127" width="360" height="110" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="755.0" y="163.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">미션 결과 전달</text>
+<text x="755.0" y="205.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">MissionResultRecorder</text>
+<rect x="575" y="378" width="360" height="110" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="755.0" y="414.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">평가 집계</text>
+<text x="755.0" y="456.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">ResultEvaluationSystem</text>
+<rect x="1075" y="268" width="330" height="110" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="1240.0" y="304.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">진행 / 종료</text>
+<text x="1240.0" y="346.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">GameFlowController</text>
+<polyline points="335,182 575,182" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="575,182 565.8691105968769,186.0776045305957 565.8691105968769,177.9223954694043" fill="#8b99a9"/>
+<text x="455" y="156" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">성공한 업무</text>
+<polyline points="185,219 185,305 755,305 755,378" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="755,378 750.9223954694043,368.8691105968769 759.0776045305957,368.8691105968769" fill="#8b99a9"/>
+<text x="450" y="279" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">현재 준비 상태</text>
+<polyline points="335,433 575,433" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="575,433 565.8691105968769,437.0776045305957 565.8691105968769,428.9223954694043" fill="#8b99a9"/>
+<text x="455" y="407" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">상태 / 대응 결과</text>
+<polyline points="935,182 1240,182 1240,268" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1240,268 1235.9223954694044,258.8691105968769 1244.0776045305956,258.8691105968769" fill="#8b99a9"/>
+<text x="1090" y="156" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">미션 진행 반영</text>
+<polyline points="935,433 1240,433 1240,378" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1240,378 1244.0776045305956,387.1308894031231 1235.9223954694044,387.1308894031231" fill="#8b99a9"/>
+<text x="1090" y="464" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">점수 / 등급</text>
+</svg>

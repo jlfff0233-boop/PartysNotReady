@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c486ce51225e1b2449cca6db19c2407e, type: 3}
+  m_Name: Npc_0_Normal
+  m_EditorClassIdentifier: 
+  _localMoveIntervalMin: 2
+  _localMoveIntervalMax: 5
+  _localMoveRadius: 3
+  _moveSpeed: 1.5
+  _localMoveTryCount: 8
+  _correctionDist: 0.5
+  _arriveDist: 0.2
+  _localMoveTimeLimit: 10
+  _rotateSpeed: 360
+  _roomMoveIntervalMin: 10
+  _roomMoveIntervalMax: 20
+  _roomMoveChance: 0.5
+  _partyRoomMoveChance: 0.2
+  _returnPartyRoomChance: 0.7
+  _roomMoveTryCount: 16
+  _roomConnectDist: 25
+  _roomRetryInterval: 1
+  _roomMoveTimeLimit: 30
+  _roomStuckTimeLimit: 3

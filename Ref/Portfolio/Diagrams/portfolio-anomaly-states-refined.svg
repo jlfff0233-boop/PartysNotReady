@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="630" viewBox="0 0 1360 630"><rect width="1360" height="630" fill="white"/>
+<rect x="35" y="235" width="225" height="106" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="147.5" y="269.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">진행 중</text>
+<text x="147.5" y="311.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">Active</text>
+<rect x="530" y="35" width="225" height="106" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="642.5" y="69.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">해결</text>
+<text x="642.5" y="111.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">Resolved</text>
+<rect x="530" y="235" width="225" height="106" rx="9" fill="#fbefee" stroke="#d7e0e9"/>
+<text x="642.5" y="269" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">실패</text>
+<text x="642.5" y="311" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">Failed</text>
+<rect x="1095" y="155" width="225" height="106" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="1207.5" y="189.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">복구</text>
+<text x="1207.5" y="231.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">Recovered</text>
+<rect x="1095" y="355" width="225" height="106" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="1207.5" y="389.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">만료</text>
+<text x="1207.5" y="431.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">Expired</text>
+<rect x="530" y="485" width="225" height="106" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="642.5" y="519.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">취소</text>
+<text x="642.5" y="561.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">Cancelled</text>
+<polyline points="260,268 375,268 375,88 530,88" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="530,88 520.8691105968769,92.0776045305957 520.8691105968769,83.9223954694043" fill="#8b99a9"/>
+<text x="445" y="61" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">시간 내 대응</text>
+<polyline points="260,305 530,305" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="530,305 520.8691105968769,309.0776045305957 520.8691105968769,300.9223954694043" fill="#8b99a9"/>
+<text x="393" y="330" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">시간 초과</text>
+<polyline points="755,270 925,270 925,208 1095,208" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1095,208 1085.869110596877,212.0776045305957 1085.869110596877,203.9223954694043" fill="#8b99a9"/>
+<text x="1008" y="181" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">사후 대응</text>
+<polyline points="755,306 925,306 925,408 1095,408" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1095,408 1085.869110596877,412.0776045305957 1085.869110596877,403.9223954694043" fill="#8b99a9"/>
+<text x="1008" y="443" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">사후 시간 종료</text>
+<polyline points="147,341 147,538 530,538" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="530,538 520.8691105968769,542.0776045305957 520.8691105968769,533.9223954694043" fill="#8b99a9"/>
+<text x="330" y="510" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">대상 무효화 / 정리</text>
+<polyline points="643,341 643,485" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="643,485 638.9223954694043,475.8691105968769 647.0776045305957,475.8691105968769" fill="#8b99a9"/>
+<text x="790" y="414" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#5d6c7e">대상 무효화 / 정리</text>
+</svg>

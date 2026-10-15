@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f5ae4e59197e104bbd40dacb277bbac, type: 3}
+  m_Name: '!_Food_Placement_Map'
+  m_EditorClassIdentifier: 
+  _data:
+  - {fileID: 11400000, guid: 396f1ebc101797e40a23aabeb186fb4f, type: 2}
+  - {fileID: 11400000, guid: 6fc1e2499c97bd74da33b24501cde4fa, type: 2}
+  - {fileID: 11400000, guid: c3e0f0de4698df24f90292153c22b5f8, type: 2}
+  - {fileID: 11400000, guid: 7734cb2cdb957e446803f20bd2e6bf56, type: 2}
+  - {fileID: 11400000, guid: 02395ca282a01df4aa71c2512bcb8d00, type: 2}
+  - {fileID: 11400000, guid: 8e776d2c978131f478d5d3d61abe5360, type: 2}
+  - {fileID: 11400000, guid: 595f2cc210e43844f854b47fa7fd3156, type: 2}
+  - {fileID: 11400000, guid: 2421eb70017c62f4d9fa0a777063143b, type: 2}
+  - {fileID: 11400000, guid: 16df6899d2836d8478869d6c41b7b28b, type: 2}
+  - {fileID: 11400000, guid: 298baa56a28a6fe4baff3855058a7c7d, type: 2}

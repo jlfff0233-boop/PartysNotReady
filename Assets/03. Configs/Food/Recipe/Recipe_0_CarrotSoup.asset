@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5c92c4f65ae314a8674b39de2356b3, type: 3}
+  m_Name: Recipe_0_CarrotSoup
+  m_EditorClassIdentifier: 
+  _recipeId: Recipe_0_CarrotSoup
+  _resultItem: {fileID: 11400000, guid: fe53526114b5b5a47a5c5f4a993e77a8, type: 2}
+  _ingredients:
+  - _item: {fileID: 11400000, guid: 3ecbb23639cb8204ca53769efe66b798, type: 2}
+    _requiredCount: 2
+  - _item: {fileID: 11400000, guid: ad22bafe434beb8498bca1c6be1dfa11, type: 2}
+    _requiredCount: 1
+  - _item: {fileID: 11400000, guid: 1904228877f13e840a87278c6a00a3b3, type: 2}
+    _requiredCount: 1
+  _resultPrefab: {fileID: 4615070339358025141, guid: 94074cfd6fa648be8ab19a3601cacc9a, type: 3}
+  _produceMinigame: {fileID: 11400000, guid: 1eea9719a1a84274f9291d13f1cc4ee5, type: 2}

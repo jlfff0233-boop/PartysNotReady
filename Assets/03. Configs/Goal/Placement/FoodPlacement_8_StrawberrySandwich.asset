@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fc51f436df56d4ca215e388e3daebb, type: 3}
+  m_Name: FoodPlacement_8_StrawberrySandwich
+  m_EditorClassIdentifier: 
+  _recipe: {fileID: 11400000, guid: d571e1d18037777428556361f6c0848f, type: 2}
+  _placementMission: {fileID: 11400000, guid: d99a51f74ba583140af66096412d3146, type: 2}
+  _locations: 01000000

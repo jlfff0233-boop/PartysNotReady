@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a93f54ea975374ea78556dc64a95fb, type: 3}
+  m_Name: 0_ProdMinigame_Timing
+  m_EditorClassIdentifier: 
+  _actionType: 0
+  _requiredSuccessCount: 3
+  _actionDuration: 2
+  _handleTravelDuration: 1
+  _successRangeStart: 0.4
+  _successRangeEnd: 0.6
+  _failureLossCount: 1
+  _hitPointSpawnInterval: 0.5
+  _hitPointLifetime: 1.5

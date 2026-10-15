@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1390" height="250" viewBox="0 0 1390 250"><rect width="1390" height="250" fill="white"/>
+<text x="315" y="36" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="27" font-weight="700" fill="#243347">플레이 중 반복</text>
+<polyline points="35,67 595,67" fill="none" stroke="#dce3eb" stroke-width="1" stroke-linejoin="round"/>
+<rect x="35" y="99" width="235" height="96" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="152.5" y="147.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">파티 준비 업무</text>
+<rect x="330" y="99" width="265" height="96" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="462.5" y="127.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">위협 대응</text>
+<text x="462.5" y="166.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">피해 복구</text>
+<polyline points="270,136 330,136" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="330,136 320.8691105968769,140.0776045305957 320.8691105968769,131.9223954694043" fill="#8b99a9"/>
+<polyline points="330,158 270,158" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="270,158 279.1308894031231,153.9223954694043 279.1308894031231,162.0776045305957" fill="#8b99a9"/>
+<rect x="685" y="99" width="300" height="96" rx="9" fill="#f7f9fb" stroke="#d7e0e9"/>
+<text x="835.0" y="127.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">시간 만료 또는</text>
+<text x="835.0" y="166.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">손님 전원 이탈</text>
+<rect x="1075" y="99" width="280" height="96" rx="9" fill="#edf5f1" stroke="#d7e0e9"/>
+<text x="1215.0" y="127.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">최종 상태 집계</text>
+<text x="1215.0" y="166.5" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="29" font-weight="700" fill="#243347">결과 확정</text>
+<polyline points="595,147 685,147" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="685,147 675.8691105968769,151.0776045305957 675.8691105968769,142.9223954694043" fill="#8b99a9"/>
+<polyline points="985,147 1075,147" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1075,147 1065.869110596877,151.0776045305957 1065.869110596877,142.9223954694043" fill="#8b99a9"/>
+</svg>

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82522c3ae39d41b4398cb1f23e98ccde, type: 3}
+  m_Name: '!_ProdMinigameDataMap'
+  m_EditorClassIdentifier: 
+  _data:
+  - _source: {fileID: 11400000, guid: 1eea9719a1a84274f9291d13f1cc4ee5, type: 2}
+    _data: {fileID: 11400000, guid: 1eea9719a1a84274f9291d13f1cc4ee5, type: 2}
+  - _source: {fileID: 11400000, guid: 041d9e322270d5a419c8060ff2f81202, type: 2}
+    _data: {fileID: 11400000, guid: 041d9e322270d5a419c8060ff2f81202, type: 2}

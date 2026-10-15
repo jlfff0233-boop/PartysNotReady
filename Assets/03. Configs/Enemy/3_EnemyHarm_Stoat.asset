@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3f4b6bae95e514f99321deb646852e, type: 3}
+  m_Name: 3_EnemyHarm_Stoat
+  m_EditorClassIdentifier: 
+  _requiredCount: 3
+  _retaliationChance: 0.75
+  _hideDuration: 8
+  _eventInterval: 1.5
+  _searchDist: 12
+  _chaseSpeed: 3.2
+  _attackDist: 1.1
+  _chaseTimeLimit: 12
+  _arriveTolerance: 0.15
+  _loseTargetDist: 16
+  _rotateSpeed: 420
+  _sampleDist: 1.5
+  _refreshInterval: 0.25
+  _stealItemMap: {fileID: 11400000, guid: 70617b1c78ab2fc4a908bd0330892c5b, type: 2}
+  _maxCapacity: 4
+  _collectTimeLimit: 10
+  _collectSpeed: 2.8
+  _takeDist: 0.9
+  _takeHeight: 1.5
+  _attackDelay: 0.55
+  _attackDuration: 0.25
+  _attackHeight: 1.2
+  _stunDuration: 1.5
+  _escapeSpeed: 3.6
+  _escapeArriveDist: 0.4
+  _escapeTimeLimit: 25
+  _escapeMinDistance: 18
+  _escapeConnectDist: 25
+  _escapeRetryInterval: 0.5
+  _escapeStuckTimeLimit: 2.5
+  _escapeArriveTolerance: 0.1
+  _moveRoomChance: 0.7

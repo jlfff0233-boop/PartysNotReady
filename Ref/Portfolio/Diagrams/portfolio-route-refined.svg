@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="216" viewBox="0 0 1400 216"><rect width="1400" height="216" fill="white"/>
+<text x="113" y="108" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="400" fill="#243347">출발 / 목적지</text>
+<rect x="274" y="53" width="230" height="110" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="389.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">큰 동선 선정</text>
+<text x="389.0" y="131.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">A*</text>
+<text x="662" y="108" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="400" fill="#243347">경유점 목록</text>
+<rect x="818" y="53" width="292" height="110" rx="9" fill="#eff4fa" stroke="#d7e0e9"/>
+<text x="964.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="30" font-weight="700" fill="#243347">실제 구간 이동</text>
+<text x="964.0" y="131.0" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="25" font-weight="400" fill="#5d6c7e">NavMeshAgent</text>
+<text x="1290" y="108" text-anchor="middle" dominant-baseline="central" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="400" fill="#243347">도착 / 실패</text>
+<polyline points="210,108 274,108" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="274,108 264.8691105968769,112.0776045305957 264.8691105968769,103.9223954694043" fill="#8b99a9"/>
+<polyline points="504,108 564,108" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="564,108 554.8691105968769,112.0776045305957 554.8691105968769,103.9223954694043" fill="#8b99a9"/>
+<polyline points="758,108 818,108" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="818,108 808.8691105968769,112.0776045305957 808.8691105968769,103.9223954694043" fill="#8b99a9"/>
+<polyline points="1110,108 1194,108" fill="none" stroke="#8b99a9" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1194,108 1184.869110596877,112.0776045305957 1184.869110596877,103.9223954694043" fill="#8b99a9"/>
+</svg>

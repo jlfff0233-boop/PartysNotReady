@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709a1373670e37747a9d22d29ca76281, type: 3}
+  m_Name: ItemPlacementMission_0_PartyPlate
+  m_EditorClassIdentifier: 
+  _itemData: {fileID: 11400000, guid: 09e682ba324a1f545a380409931ded67, type: 2}
+  _placementMission: {fileID: 11400000, guid: eab6f1a6043643b4f89af3d01a7ec257, type: 2}
+  _locations: 02000000

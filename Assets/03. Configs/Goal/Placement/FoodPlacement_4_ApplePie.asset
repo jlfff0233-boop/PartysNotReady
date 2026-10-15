@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fc51f436df56d4ca215e388e3daebb, type: 3}
+  m_Name: FoodPlacement_4_ApplePie
+  m_EditorClassIdentifier: 
+  _recipe: {fileID: 11400000, guid: 2f3e1dca3251eeb4aa4c92a55ef2a055, type: 2}
+  _placementMission: {fileID: 11400000, guid: b1a45ca8da4a3644e8cb8c204edb76e2, type: 2}
+  _locations: 01000000

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee14b7753a5c994ba2784a7d124f148, type: 3}
+  m_Name: '!_Cook_Goal_Map'
+  m_EditorClassIdentifier: 
+  _data:
+  - {fileID: 11400000, guid: 00440d6da7053e747960edce92632fba, type: 2}
+  - {fileID: 11400000, guid: 63059a77f0d27414fa364ca6303f68a1, type: 2}
+  - {fileID: 11400000, guid: a8eda846c0178174086ccbf589324771, type: 2}
+  - {fileID: 11400000, guid: 5582805cee3b54d46bd0341facbd5877, type: 2}
+  - {fileID: 11400000, guid: 8c3269b61b359e74a97fbf3ff49474a1, type: 2}
+  - {fileID: 11400000, guid: 5d69f0b8d9508834095e5f849c45aa23, type: 2}
+  - {fileID: 11400000, guid: 5f4ed632f62560e48904feee6c39a4ff, type: 2}
+  - {fileID: 11400000, guid: 80aeee540d87f9d4f94e2cbf9777f412, type: 2}
+  - {fileID: 11400000, guid: 94c7ea1489de70541a8ea5c675e1853d, type: 2}
+  - {fileID: 11400000, guid: 65464d2585f0edb4291d4f09b148f348, type: 2}

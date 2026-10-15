@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8472bea9fb04b43b8439412e022d59, type: 3}
+  m_Name: '!_MissionMap_AllFood'
+  m_EditorClassIdentifier: 
+  _name: Mission_AllFood
+  _missions:
+  - {fileID: 11400000, guid: 2287f9605b9aa7a46b9a47b52bf49fb3, type: 2}
+  - {fileID: 11400000, guid: d6be41ab0935f3545852e66b34c179da, type: 2}
+  - {fileID: 11400000, guid: 1e9ac037c1c07444ca6f12e2c09ccd3f, type: 2}
+  - {fileID: 11400000, guid: 4b4ecfc9890ed98468b8c7c5b3401fd5, type: 2}
+  - {fileID: 11400000, guid: 09ecb29aeb669b84ba6f1dc814d1ccbd, type: 2}
+  - {fileID: 11400000, guid: b4fa26250daab7743b256c0ca76065dc, type: 2}
+  - {fileID: 11400000, guid: ca7a481b91cac884e975c216e576b27f, type: 2}
+  - {fileID: 11400000, guid: c2fa19e32b59f4247a55dcc92f03ea0a, type: 2}
+  - {fileID: 11400000, guid: fa74812c5f1c7ff4bbc36dd7cf65c852, type: 2}
+  - {fileID: 11400000, guid: 1df4cf2b4c0eeb44785aafded09e77c9, type: 2}
+  - {fileID: 11400000, guid: 312b4fd7ad85366438bba959f3b54405, type: 2}
+  - {fileID: 11400000, guid: 4c97356c23d249e42b596e28ff1dddf2, type: 2}
+  - {fileID: 11400000, guid: e19647003a982904488ce3578d2df356, type: 2}
+  - {fileID: 11400000, guid: 9dcef2e18b33b8f40824c19b48582544, type: 2}
+  - {fileID: 11400000, guid: b1a45ca8da4a3644e8cb8c204edb76e2, type: 2}
+  - {fileID: 11400000, guid: ccc29337c6b95ef4aa5cc1d3bb627c55, type: 2}
+  - {fileID: 11400000, guid: 2612c9f66b8d89c49a1573da6f3fed8e, type: 2}
+  - {fileID: 11400000, guid: 8a7e10f74747e234596ee68c34a44ae6, type: 2}
+  - {fileID: 11400000, guid: d99a51f74ba583140af66096412d3146, type: 2}
+  - {fileID: 11400000, guid: 9ed77fe3a0e4dc34eb3ba199f78cde8b, type: 2}

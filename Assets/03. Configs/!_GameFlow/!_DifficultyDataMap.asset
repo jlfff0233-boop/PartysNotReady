@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7caf3635eb6f4e149b8b5a3c711b83ce, type: 3}
+  m_Name: '!_DifficultyDataMap'
+  m_EditorClassIdentifier: 
+  _data:
+  - _difficulty: 0
+    _flow: {fileID: 11400000, guid: 65e7b25d766e6914e90a8fb05dfee059, type: 2}
+    _pressure: {fileID: 11400000, guid: c0f994926ca30c040898f0d3cb973d6a, type: 2}
+    _spawnMap: {fileID: 11400000, guid: 84e5e82c6a9ced44e8530f246c6f2170, type: 2}
+    _minigameMap: {fileID: 11400000, guid: 1be79c1c876ada947b8cfbceb5dc5063, type: 2}
+    _mood: {fileID: 11400000, guid: 78c092c31ed6a964582580c5f7262b77, type: 2}
+    _score: {fileID: 11400000, guid: cbad03079dd69cc4b85e90eef8970dbc, type: 2}
+    _prodDescText: "\uC81C\uC791: \uB110\uB110\uD55C \uC81C\uD55C \uC2DC\uAC04"
+    _anomalyDescText: "\uBCC0\uCE59 \uC0AC\uAC74: \uC5EC\uC720\uB85C\uC6B4 \uBC1C\uC0DD
+      \uBE48\uB3C4"
+  - _difficulty: 1
+    _flow: {fileID: 11400000, guid: 15ce8b57f46db1341b830e67a02b835b, type: 2}
+    _pressure: {fileID: 11400000, guid: 4e7c313c02b5cb9469be73acfb1301b5, type: 2}
+    _spawnMap: {fileID: 11400000, guid: 84e5e82c6a9ced44e8530f246c6f2170, type: 2}
+    _minigameMap: {fileID: 11400000, guid: 1be79c1c876ada947b8cfbceb5dc5063, type: 2}
+    _mood: {fileID: 11400000, guid: 78c092c31ed6a964582580c5f7262b77, type: 2}
+    _score: {fileID: 11400000, guid: cbad03079dd69cc4b85e90eef8970dbc, type: 2}
+    _prodDescText: "\uC81C\uC791: \uC801\uB2F9\uD55C \uC81C\uC791 \uC2DC\uAC04"
+    _anomalyDescText: "\uBCC0\uCE59 \uC0AC\uAC74: \uC801\uB2F9\uD55C \uBC1C\uC0DD
+      \uBE48\uB3C4"
+  - _difficulty: 2
+    _flow: {fileID: 11400000, guid: 46e2d9f64e462174dbeb27722d2c6d9d, type: 2}
+    _pressure: {fileID: 11400000, guid: 650ec7b1eaa565140906865a7eec3467, type: 2}
+    _spawnMap: {fileID: 11400000, guid: 84e5e82c6a9ced44e8530f246c6f2170, type: 2}
+    _minigameMap: {fileID: 11400000, guid: 1be79c1c876ada947b8cfbceb5dc5063, type: 2}
+    _mood: {fileID: 11400000, guid: 78c092c31ed6a964582580c5f7262b77, type: 2}
+    _score: {fileID: 11400000, guid: cbad03079dd69cc4b85e90eef8970dbc, type: 2}
+    _prodDescText: "\uC81C\uC791: \uC870\uAE08 \uBE61\uBE61\uD55C \uC81C\uC791 \uC2DC\uAC04"
+    _anomalyDescText: "\uBCC0\uCE59 \uC0AC\uAC74: \uC544\uCC28 \uD558\uB294 \uC0AC\uC774\uC5D0
+      \uB610 \uBC1C\uC0DD \uAC00\uB2A5"

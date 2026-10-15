@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2cd22c0e9d294ba7c397cc3eb1b11, type: 3}
+  m_Name: AnomalyPressure_2_Hard
+  m_EditorClassIdentifier: 
+  _maxPressure: 100
+  _pressureChanceScale: 0.14
+  _threshold: 70
+  _checkInterval: 6
+  _decreaseOnSuccess: 30
+  _increase: 0.45
+  _unvisitedBonus: 0.2
+  _roomCooldown: 35
+  _globalCooldown: 15

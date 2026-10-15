@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b419069d80d024a9e426bed25d5e97, type: 3}
+  m_Name: 0_EnemyBothersome_Dog
+  m_EditorClassIdentifier: 
+  _reqCount: 3
+  _frontDist: 2
+  _deliveryDist: 2.5
+  _resumeDist: 3
+  _followSpeed: 2.5
+  _fetchSpeed: 4
+  _rotateSpeed: 360
+  _searchDistance: 1.5
+  _repathInterval: 0.2
+  _fetchDist: 1
+  _recoverDelay: 3
+  _progressDist: 0.1

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b4873db0531144eb121d2c9b07d321, type: 3}
+  m_Name: 2_EnemyDemand_Bear
+  m_EditorClassIdentifier: 
+  _likedFoods: {fileID: 11400000, guid: a920edf606bfd4c41be6328018403132, type: 2}
+  _dislikedFoods: {fileID: 11400000, guid: 0078f3ddec3bb084c8ee263008804d7e, type: 2}
+  _maxSatisfaction: 100
+  _eatTime: 2
+  _moveSpeed: 2
+  _rotateSpeed: 360
+  _stopDist: 0.2
+  _attackCount: 3
+  _ingredientLossCount: 1
+  _attackDelay: 0.5
+  _attackDuration: 0.3
+  _approachTimeout: 10
+  _pushPower: 3
+  _pushUpPower: 1
+  _kidnapChance: 0.2
+  _kidnapDist: 1
+  _kidnapCheckDist: 3
+  _kidnapRefreshInterval: 0.3
+  _kidnapHeight: 1
+  _kidnapTolerance: 0.1
