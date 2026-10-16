@@ -14,11 +14,11 @@
 
 ![음식을 운반하며 파티룸에 진입하는 플레이 화면](Ref/Portfolio/Representative/Failplay/01-party-entry-00m54s.png)
 
-|   |   |
+| **파티룸 입구** | **여우와 토끼** |
 | --- | --- |
 | ![서포트 아이템과 완료된 미션이 표시된 파티룸 화면](Ref/Portfolio/Representative/Failplay/08-party-entrance-05m04s.png) | ![파티룸에서 마주친 여우와 토끼](Ref/Portfolio/Representative/Success1/S04-fox-rabbit-01m04s.png) |
 
-|   |   |
+| **레시피 선택** | **조리 성공** |
 | --- | --- |
 | ![그릇의 레시피를 선택하는 화면](Ref/Portfolio/Representative/Failplay/15-recipe-selection-04m54s.png) | ![조리 미니게임의 성공 판정 화면](Ref/Portfolio/Representative/Failplay/16-cooking-success-04m16s.png) |
 
@@ -211,9 +211,9 @@ _globalCooldownUntil =
 | --- | --- |
 | ![확보한 재료를 운반하는 까마귀](Ref/Portfolio/Enemies/crow-carrying.png) | ![여우에게 포획된 NPC를 구조하는 장면](Ref/Portfolio/Enemies/fox-rescue-game.gif) |
 
-| **담비 — 공격 동작** | **담비 — 재료 운반·도주 (임시)** |
+| **담비 — 공격 동작** | **담비 — 재료 운반·도주** |
 | --- | --- |
-| ![플레이어를 향해 공격하는 담비의 동작](Ref/Portfolio/Enemies/marten-attack.gif) | ![감자를 확보한 뒤 출입구로 도주하는 담비 — 운반 위치 보완 후 교체 예정](Ref/Portfolio/Enemies/marten-carrying-escape.gif) |
+| ![플레이어를 향해 공격하는 담비의 동작](Ref/Portfolio/Enemies/marten-attack.gif) | ![감자를 확보한 뒤 출입구로 도주하는 담비](Ref/Portfolio/Enemies/marten-carrying-escape.gif) |
 
 ---
 
@@ -463,8 +463,6 @@ Inspector를 개별 조회하는 작업과 상황 재현을 줄이기 위해, **
 
 적 테스트는 이전 활동을 정리하고 선택 방을 준비하지만, 실제 대상·이동 준비 조건을 무조건 통과시키지는 않습니다.
 
-**\[Play Debug 캡처 — 방별 Pressure와 적 상태 / 최근 전이 기록을 나란히 삽입\]**
-
 ### Anomaly Debug Inspector
 
 발생 건 ID, 관련 대상, 상태와 남은 시간, 정상 기준 잠금·정착 대기, 최근 종료 결과를 조회합니다.
@@ -479,6 +477,7 @@ Inspector를 개별 조회하는 작업과 상황 재현을 줄이기 위해, **
 - **Anomaly 대상 설정 / 컴포넌트 구성**: 대상의 기능 설정과 필요한 구성 검사를 모아 개별 Inspector를 반복 탐색하는 작업을 줄였습니다.
 - **Data Importer**: CSV / JSON을 검사한 뒤 기존 ScriptableObject와 Map을 재사용하고 관리 필드만 갱신합니다. 수동 연결과 기존 에셋 참조를 보존하도록 구성했습니다.
 - **Sound 설정 도구**: 행동별 음원과 공간·재생 설정을 확인하고 반복 연결 작업을 정리합니다.
+
 ![통합 임포터의 작업 목록과 데이터 연결·검사·적용 화면](Ref/Portfolio/Tools/data-importer-window.png)
 
 ### 플레이 테스트와 확인 범위
@@ -596,11 +595,6 @@ AI로 모델을 생성하는 시간과 원하는 형태로 완성하는 시간�
 | 시계 효과음 | [Loopable Ticking Clock — OwlStorm / Owlish Media](https://freesound.org/people/OwlStorm/sounds/212181/) |
 | 개 짖는 소리 | [Short Dog Bark — qubodup](https://freesound.org/people/qubodup/sounds/827323/) |
 | 수집·타격 효과음 | [Owlish Media](https://opengameart.org/content/sound-effects-pack) — `Collect.wav`, `hit.wav`에 제작자 메타데이터 확인 |
-
-| 구분 | 출처 |
-| --- | --- |
-| UI 효과음 자료 | [Interface Sounds — Kenney](https://kenney.nl/assets/interface-sounds) |
-| 효과음 자료 | [Sound Effects Pack — OwlishMedia](https://opengameart.org/content/sound-effects-pack) |
 | 음악 자료 | [Party and Gameover loop — gilzoide](https://opengameart.org/content/party-and-gameover-loop) — 원본 파일: `happy_theme.ogg`, `sad_theme.ogg` |
 | 음악 자료 | [Happy Loop — wipics](https://opengameart.org/content/happy-loop) — 원본 파일: `happy loop.mp3` |
 | 날갯짓 효과음의 원본 소스 | [fast simple chop 5 — dave.des](https://freesound.org/people/dave.des/sounds/127197/) — `wings_flap_large`의 동봉 문서에 명시 |
@@ -616,4 +610,3 @@ AI로 모델을 생성하는 시간과 원하는 형태로 완성하는 시간�
 일부 조리·장식 소품, 추가 배경음악 및 `MoreSounds` 효과음의 세부 출처는 확인 중입니다.
 
 공개 저장소에는 외부 리소스 원본과 일부 패키지가 포함되어 있지 않습니다. 위 목록은 게임 제작에 사용한 리소스와 원본 프로젝트에서 확인한 자료를 구분해 정리했습니다.
-
