@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#718197" stroke-width="1.5"/></marker></defs>
+<rect width="1100" height="700" fill="white"/>
+<g font-family="Malgun Gothic, Arial, sans-serif" text-anchor="middle" fill="#243347">
+<rect x="300" y="25" width="500" height="105" rx="12" fill="#eff4fa" stroke="#c7d3e0"/>
+<text x="550" y="69" font-size="30" font-weight="700">공통 Enemy</text>
+<text x="550" y="107" font-size="26">State 실행·전환 관리</text>
+<path d="M550 130 V168 H285 V210 M550 168 H815 V210" fill="none" stroke="#718197" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M285 168 V210" fill="none" stroke="#718197" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="55" y="210" width="460" height="235" rx="12" fill="#eaf4ef" stroke="#c7d8ce"/>
+<rect x="585" y="210" width="460" height="235" rx="12" fill="#edf1fc" stroke="#cbd4e5"/>
+<text x="285" y="253" font-size="30" font-weight="700">담비 State</text>
+<text x="285" y="296" font-size="27">Hide / Chase / Attack</text>
+<text x="285" y="332" font-size="27">Collect / Escape</text>
+<text x="285" y="383" font-size="26">Attack: 플레이어 타격</text>
+<text x="285" y="420" font-size="26">Collect: 물건 확보</text>
+<text x="815" y="253" font-size="30" font-weight="700">여우 State</text>
+<text x="815" y="296" font-size="27">Hide / Chase / Attack</text>
+<text x="815" y="332" font-size="27">Escape</text>
+<text x="815" y="383" font-size="26">Attack: 포획 시도</text>
+<path d="M285 445 V535 M815 445 V535" fill="none" stroke="#718197" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="285" y="495" font-size="23" fill="#5d6c7e" paint-order="stroke" stroke="white" stroke-width="9">행동 메서드 경유</text>
+<text x="815" y="495" font-size="23" fill="#5d6c7e" paint-order="stroke" stroke="white" stroke-width="9">행동 메서드 경유</text>
+<rect x="55" y="535" width="460" height="115" rx="12" fill="#eaf4ef" stroke="#c7d8ce"/>
+<rect x="585" y="535" width="460" height="115" rx="12" fill="#edf1fc" stroke="#cbd4e5"/>
+<text x="285" y="580" font-size="28" font-weight="700">필요한 기능 재사용</text>
+<text x="285" y="624" font-size="27">이동·잠복·타격·수집</text>
+<text x="815" y="580" font-size="28" font-weight="700">필요한 기능 재사용</text>
+<text x="815" y="624" font-size="27">이동·잠복·포획</text>
+</g></svg>

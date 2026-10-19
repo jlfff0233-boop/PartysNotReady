@@ -2,7 +2,7 @@
 
 파티 준비 업무를 수행하는 동시에, 공간 곳곳에서 발생하는 이상 변화와 포식자의 징후를 발견하고 대응해 초대받은 토끼들을 지키는 **3D 싱글플레이 게임**
 
-- **장르**: 3D / Simulation / Action
+- **장르**: 3D / Simulation
 - **엔진**: Unity 6
 - **언어**: C#
 - **플랫폼**: PC
@@ -34,11 +34,11 @@
 
 ### 게임 소개
 
-**Party's Not Ready!**는 파티가 시작되기 전 제한된 시간 동안 음식을 제작·배치하면서 파티장에 접근하는 포식자와 비정상적인 환경 변화를 함께 처리하는 게임입니다.
+<strong>Party's Not Ready!</strong>는 파티가 시작되기 전 제한된 시간 동안 음식을 제작·배치하면서 파티장에 접근하는 포식자와 비정상적인 환경 변화를 함께 처리하는 게임입니다.
 
 플레이 공간은 **조리실 / 창고 / 파티룸 / 드레스룸**으로 나뉩니다. 현재 플레이의 중심은 공급원에서 재료를 확보하고, 그릇에서 음식을 제작한 뒤 파티룸에 배치하는 흐름입니다.<br>준비 중에는 물건의 낙하·이동·개폐·외형 변화가 발생하고, 포식자는 음식과 재료를 훔치거나 토끼를 포획합니다. 플레이어는 준비 업무를 계속하면서 이상 변화에 대응하고 손실을 복구해야 합니다.
 
-플레이어는 파티 준비뿐 아니라 **손님 안전, 분위기와 포식자 대응 성과**를 함께 관리해야 합니다. 준비 상태는 Preparation, 손님 안전은 Safety, 분위기는 Mood, 포식자 대응 성과는 Predator Control로 집계해 최종 평가에 반영했습니다.
+플레이어는 파티 준비뿐 아니라 **손님 안전, 분위기와 포식자 대응 성과**를 함께 관리해야 합니다. 현재 준비 상태(Preparation), 손님 안전(Safety), 분위기(Mood), 포식자 대응 성과(Predator Control)를 집계해 최종 평가에 반영했습니다.
 
 ### 전체 플레이 흐름
 
@@ -48,12 +48,18 @@
 
 ### 주요 구현
 
-- 공통 Anomaly 시스템과 사건별 생명주기 관리
-- 방별 Pressure 기반 사건 / 포식자 발생 제어
-- 서로 다른 대응 방식을 요구하는 5종 포식자 AI
-- `A*` + NavMesh 기반 공용 Route 시스템
-- 파티 준비 / Mission / 현재 Preparation / 최종 Evaluation 연동
-- 게임 상태를 직접 확인할 수 있는 통합 Play Debug / Anomaly 진단 도구
+- **공통 Anomaly(물건·환경의 이상 변화) 시스템과 사건별 생명주기 관리**<br>
+  낙하·개폐·회전 등 9개 사건 유형에 공통 상태·시간 규칙을 적용하고, 사건별 동작과 월드 상태·구독 정리를 분리했습니다.
+- **방별 Pressure(사건 발생 압력) 기반 사건 / 포식자 발생 제어**<br>
+  방마다 발생 압력을 누적해 방과 발생 그룹을 선정하고, 실제 시작에 성공한 경우에만 압력과 재발생 시간을 갱신합니다.
+- **서로 다른 대응 방식을 요구하는 5종 포식자 AI**<br>
+  공놀이·음식 제공·절도 저지·구조 등 대응 방식을 구분하고, 적별 행동 State에서 필요한 기능을 실행합니다.
+- **`A*` + NavMesh 기반 공용 Route 시스템**<br>
+  NavMesh로 검증한 연결과 구간 길이를 바탕으로 직접 구현한 A\*가 경유 순서를 계산하고, NavMeshAgent가 각 구간을 이동합니다.
+- **파티 준비 / Mission(업무 수행 이력) / 현재 Preparation / 최종 Evaluation(평가) 연동**<br>
+  완료한 업무 이력과 현재 준비 상태를 분리해, 배치 후 도난과 같은 상태 변화도 최종 평가에 반영합니다.
+- **게임 상태를 직접 확인할 수 있는 통합 Play Debug / Anomaly 진단 도구**<br>
+  현재 상태 조회부터 실제 실행 요청, 거절 사유와 결과 확인까지 연결했습니다.
 
 ### 전체 게임 아키텍처
 
@@ -146,7 +152,7 @@ public bool TryComplete ( bool isCorrect )
 
 **Pressure 소비와 Cooldown / RepeatDelay 갱신은 실제 시작에 성공한 뒤에만 처리합니다.** 후보가 없거나 시작 요청이 거절되면 성공으로 기록하지 않습니다.
 
-방별 Pressure는 Cooldown 중에도 누적되며, 미방문 시간에 따라 추가로 증가합니다. 방문만으로 누적 Pressure를 낮추지는 않습니다.
+방별 Pressure는 Cooldown 중에도 기본 증가량만큼 누적되며, 플레이어가 없는 동안에는 일정한 미방문 보너스가 더해집니다. 방문 시 미방문 시간은 초기화되지만 누적 Pressure는 즉시 감소하지 않습니다.
 
 **실제 코드** — `AnomalySpawnSystem.cs`의 시작 결과 처리 일부 발췌
 
@@ -178,11 +184,17 @@ _globalCooldownUntil =
 | 담비 | 환경 교란 / 준비물 절도 / 누적 보복 | 이상 변화 발견과 대응 |
 | 여우 | NPC 또는 플레이어 포획 | 징후 탐지 / 구조 / 탈출 |
 
-포식자마다 자신의 행동에 필요한 State만 사용하며 모든 Enemy를 하나의 거대한 상태 머신에 맞추지 않았습니다.
+공통 `Enemy`가 상태 실행과 전환을 관리하고, 각 적은 `IEnemyState`를 구현한 전용 State 중 필요한 것만 등록합니다.
 
-이동 / 공격 / 포획 / 잠복 / 탐색처럼 여러 적이 공유할 수 있는 기능은 공통 모듈로 분리하되, 상태 이름이 같다는 이유만으로 각 적의 행동 State 자체를 통합하지 않았습니다.
+적별 State는 해당 Enemy의 행동 메서드를 호출하고, 연결된 기능 모듈로 동작을 실행합니다. 상태 이름이 같아도 행동과 전환 규칙이 다르면 별도 State로 구현했습니다.
 
-예를 들어 담비와 여우 모두 `Hide / Chase / Attack / Escape` 흐름을 사용하지만, 담비의 Attack은 플레이어 타격이고 여우의 Attack은 포획 시도이며 여우의 Escape는 포획한 대상을 동반할 수 있습니다.
+담비와 여우는 `Hide / Chase / Attack / Escape` 상태를 사용하지만, 담비의 Attack은 플레이어 타격이고 여우의 Attack은 포획 시도입니다. 담비에는 사건 실패 후 물건을 확보하는 Collect 상태가 추가됩니다.
+
+#### 공통 상태 관리와 적별 행동 실행
+
+![공통 Enemy의 상태 관리와 담비·여우의 행동 구성 및 기능 재사용](Ref/Portfolio/Diagrams/portfolio-enemy-structure-simple.svg)
+
+공통 Enemy가 상태 실행과 전환을 관리하고, 담비와 여우는 필요한 State를 각각 등록합니다. 각 State는 해당 Enemy의 행동 메서드를 거쳐 필요한 기능 모듈을 사용합니다.
 
 #### Anomaly 결과와 Enemy 연결
 
@@ -197,7 +209,7 @@ _globalCooldownUntil =
 
 #### 기존 기능의 재사용
 
-공통 이동과 `RouteNavigator`, 공격의 `CharacterAttacker`, 포획의 `CaptureController`를 적별 State에서 조합합니다. 까마귀의 비행은 `FlightMover`가 담당합니다.<br>까마귀와 담비의 공급원 절도도 실제 출력 아이템 획득과 보유 결과를 연결했습니다. 풀에 객체가 생성됐다는 사실과 적이 실제 재료를 확보했다는 결과는 구분합니다.
+담비와 여우의 이동·도주는 `CharacterMover`와 `RouteNavigator`를 사용하고, 타격·포획은 각 Enemy에 연결한 `CharacterAttacker`와 `CaptureController` 등으로 실행합니다. 까마귀의 비행은 `FlightMover`가 담당합니다.<br>까마귀와 담비의 공급원 절도도 실제 출력 아이템 획득과 보유 결과를 연결했습니다. 풀에 객체가 생성됐다는 사실과 적이 실제 재료를 확보했다는 결과는 구분합니다.
 
 | **개 — 공 상호작용** | **개 — 던진 공 추적** |
 | --- | --- |
@@ -229,24 +241,102 @@ NavMeshAgent의 목적지 이동에 더해, 방 입구와 복도 분기를 경�
 | **RoutePlanner** | 구성된 연결 비용을 사용해 `A*` 경로를 계산합니다. |
 | **RouteNavigator** | 선택 경로의 진행, 도착·실패와 재시도를 관리합니다. 구간 이동은 CharacterMover를 통해 NavMeshAgent에 요청합니다. |
 
+#### A\* 탐색 구현
+
+**실제 코드 — `RoutePlanner.cs`의 최소 F값 선택**
+
+`TakeNextNode()` 내부 발췌입니다.
+
+```csharp
+int bestIndex = 0;
+int bestNode = _openNodes [ 0 ];
+
+//G: 출발점부터 누적 비용, H: 목표까지 예상 거리
+//F = G + H가 가장 작은 노드부터 확인
+double bestScore = ( double ) _costs [ bestNode ] +
+                   EstimateDistance( bestNode, goal );
+
+for ( int i = 1; i < _openNodes.Count; i++ )
+{
+    int node = _openNodes [ i ];
+    double score = ( double ) _costs [ node ] +
+                   EstimateDistance( node, goal );
+
+    if ( score >= bestScore )
+        continue;
+
+    bestIndex = i;
+    bestNode = node;
+    bestScore = score;
+}
+
+//주요 분기점 위주의 작은 그래프이므로 목록에서 직접 선택
+_openNodes.RemoveAt( bestIndex );
+return bestNode;
+```
+
+**실제 코드 — 더 짧은 경로의 비용과 이전 노드 갱신**
+
+`UpdateConnections()` 내부 발췌입니다.
+
+```csharp
+float nextCost = _costs [ current ] + connection.Value;
+
+//누적 비용이 표현 범위를 넘은 경로는 사용하지 않음
+if ( float.IsInfinity( nextCost ) || float.IsNaN( nextCost ) )
+    continue;
+
+//더 짧은 경로를 발견한 경우에만 비용과 이전 노드 변경
+if ( _costs.TryGetValue( next, out float previousCost ) &&
+     nextCost >= previousCost )
+    continue;
+
+_costs [ next ] = nextCost;
+_previous [ next ] = current;
+
+//이미 확인한 노드도 더 짧은 경로가 발견되면 다시 검사
+if ( _openNodes.Contains( next ) == false )
+    _openNodes.Add( next );
+```
+
+G는 출발점부터의 누적 연결 비용, H는 목표까지의 직선거리입니다. F = G + H가 가장 작은 노드를 선택하고, 연결된 노드에 더 낮은 비용으로 도달하면 G와 이전 노드를 갱신합니다. 이 과정을 반복해 목표에 도달하면 이전 노드를 역추적하여 경유 순서를 구성합니다.
+
 #### 경로 선정과 실제 이동
 
-![route](Ref/Portfolio/Diagrams/portfolio-route-refined.svg)
+![NavMesh 연결 검사와 비용 구성부터 A* 경유 순서 계산 및 구간 이동까지의 Route 흐름](Ref/Portfolio/Diagrams/portfolio-route-flow.svg)
 
-A\*가 경유할 큰 동선을 고르고, NavMeshAgent가 실제 구간을 이동합니다.
+NavMesh로 통행 가능한 연결과 구간 길이를 구한 뒤, A\*가 경유 순서를 계산하고 NavMeshAgent가 각 구간을 이동합니다.
 
 연결 비용은 직선거리 대신 **NavMesh 경로의 꺾이는 지점 사이 길이 합**을 사용합니다. 부분 경로와 끝점이 맞지 않는 경로를 제외하고, A → B 통행 성공만으로 B → A 연결까지 가능하다고 가정하지 않습니다.
 
-이동 중 노드·연결 변경, 불완전 경로와 정체를 감지하면 재시도 간격을 두고 다시 검사합니다. 재시도해도 전체 이동 제한시간은 초기화하지 않습니다.
+이동 중 경로 문제나 정체가 감지되면 간격을 두고 재시도합니다. 일반 경로는 재구성하고, 필수 경유 경로는 선정 순서를 유지한 채 다음 미통과 지점까지 재검사합니다. 전체 이동 제한시간은 유지합니다.
 
 #### 적별로 다른 도주 조건
 
-- **여우**: 입구 반대 방향의 지점을 경유해 돌아오며, 실제 입구 도착에서 납치 완료를 처리합니다.
-- **담비**: 현관까지의 기본 경로가 짧으면 최소 이동 거리를 확보하는 경유 경로를 선택합니다.
+- **여우**: 포획 대상을 보유하면 입구 반대 방향으로 우회한 뒤 입구로 돌아와 납치를 완료합니다. 빈손 도주는 연결된 두 노드를 이용합니다.
+- **담비**: 개별 도주 지점이 있으면 일반 경로를 사용하고, 없으면 현관까지 최소 이동 거리를 확보하는 경로를 선정합니다.
 
 Route는 도착·실패를 반환하고, **보유 재료 또는 포획 대상의 정리는 호출한 적**이 담당합니다. NPC의 방 이동도 같은 Route 구조를 사용합니다.
 
-![Scene View의 맵과 Route 노드 배치](Ref/Portfolio/Screenshots/route-nodes-scene.png)
+![RouteGraph의 노드 배치와 연결 구조](Ref/Portfolio/Screenshots/route-nodes-scene.png)
+
+RouteGraph의 노드 배치와 연결 구조
+
+#### 플레이 중 실제 선정 경로 확인
+
+실제 플레이에서 Route 시스템이 채택한 경유 순서와 현재 목표·진행 상태를 Scene View와 Play Debug에서 확인하도록 디버그 표시를 구현했습니다. 빨간 선은 채택 당시의 NavMesh 구간 경로, 회색은 처리된 구간, 흰 선은 현재 Agent 구간이며, 캐릭터가 실제로 지나간 위치의 기록은 아닙니다.
+
+**실제 채택 결과와 진행 상태**
+
+[![여우의 입구 우회·A* 복귀 경로를 Scene View에 표시하고, Play Debug에서 실제 채택 순서·현재 목표·이동 상태를 확인한 화면](Ref/Portfolio/Screenshots/route-debug.png)](Ref/Portfolio/Screenshots/route-debug.png)
+
+여우의 입구 우회·A* 복귀 경로를 Scene View에 표시하고, Play Debug에서 실제 채택 순서·현재 목표·이동 상태를 확인한 화면
+
+**다른 이동 상황의 경로 사례**
+
+[![다른 이동 상황에서 채택된 경유 순번과 NavMesh 구간 경로를 확대한 Scene View. 주황 링은 현재 목표를 표시합니다.](Ref/Portfolio/Screenshots/route.png)](Ref/Portfolio/Screenshots/route.png)
+
+다른 이동 상황에서 채택된 경유 순번과 NavMesh 구간 경로를 확대한 Scene View. 주황 링은 현재 목표를 표시합니다.
 
 ---
 
@@ -470,6 +560,7 @@ Inspector를 개별 조회하는 작업과 상황 재현을 줄이기 위해, **
 발생 버튼은 `RequestDebugStart`를 통해 기존 발생 함수를 호출하고, 실행 경로의 `ReportStartFailure`가 반환한 Category / Code / Message를 표시합니다. **Inspector가 별도 규칙으로 실패를 추측하지 않도록** 구성했습니다.<br>낙하 대상의 보유·잠금, 실제 지지 표면 없음과 저장된 배치 표면 불일치를 구분해 확인할 수 있습니다.
 
 ![Anomaly Debug Inspector 실행 흐름](Ref/Portfolio/Diagrams/portfolio-debug-refined.svg)
+
 ![Play Debug 사건 탭에서 발생 건별 상태·남은 시간·현재 각도와 해결 기준 조회](Ref/Portfolio/Anomalies/rotate-event-debug.png)
 
 ### 반복 설정 작업
@@ -606,7 +697,3 @@ AI로 모델을 생성하는 시간과 원하는 형태로 완성하는 시간�
 | --- | --- |
 | UI 애니메이션 | [DOTween — Demigiant](https://dotween.demigiant.com/) |
 | 외곽선 렌더링 | [Linework — Alexander Ameye](https://linework.ameye.dev/) |
-
-일부 조리·장식 소품, 추가 배경음악 및 `MoreSounds` 효과음의 세부 출처는 확인 중입니다.
-
-공개 저장소에는 외부 리소스 원본과 일부 패키지가 포함되어 있지 않습니다. 위 목록은 게임 제작에 사용한 리소스와 원본 프로젝트에서 확인한 자료를 구분해 정리했습니다.
