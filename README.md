@@ -1,4 +1,4 @@
-# Party's Not Ready! 26.10.16
+# Party's Not Ready! (26.11.09 업데이트)
 
 파티 준비 업무를 수행하는 동시에, 공간 곳곳에서 발생하는 이상 변화와 포식자의 징후를 발견하고 대응해 초대받은 토끼들을 지키는 **3D 싱글플레이 게임**
 
@@ -7,26 +7,28 @@
 - **언어**: C#
 - **플랫폼**: PC
 - **개발 형태**: 개인 프로젝트
-- **개발 기간**: 2026.09.03~2026.10.16 / 멀티 플레이 구현 예정
+- **개발 기간**: 약 1.5개월 (2026.09.03 ~ 2026.10.16, 싱글 기준) / 멀티 플레이 구현 중 (2026-11-09 기준)
 - **포트폴리오 구분**: Unity 프로그래머 메인 포트폴리오
 
 **\[대표 플레이 화면\]**
 
 ![음식을 운반하며 파티룸에 진입하는 플레이 화면](Ref/Portfolio/Representative/Failplay/01-party-entry-00m54s.png)
 
-| **파티룸 입구** | **여우와 토끼** |
-| --- | --- |
-| ![서포트 아이템과 완료된 미션이 표시된 파티룸 화면](Ref/Portfolio/Representative/Failplay/08-party-entrance-05m04s.png) | ![파티룸에서 마주친 여우와 토끼](Ref/Portfolio/Representative/Success1/S04-fox-rabbit-01m04s.png) |
+음식을 운반하며 파티룸에 진입하는 플레이 화면
 
-| **레시피 선택** | **조리 성공** |
+| | |
 | --- | --- |
-| ![그릇의 레시피를 선택하는 화면](Ref/Portfolio/Representative/Failplay/15-recipe-selection-04m54s.png) | ![조리 미니게임의 성공 판정 화면](Ref/Portfolio/Representative/Failplay/16-cooking-success-04m16s.png) |
+| ![서포트 아이템과 완료된 미션이 표시된 파티룸 화면](Ref/Portfolio/Representative/Failplay/08-party-entrance-05m04s.png)<br>서포트 아이템과 완료된 미션이 표시된 파티룸 화면 | ![파티룸에서 마주친 여우와 토끼](Ref/Portfolio/Representative/Success1/S04-fox-rabbit-01m04s.png)<br>파티룸에서 마주친 여우와 토끼 |
 
-[▶ 플레이 영상 보기](https://youtu.be/p0TNChRhZu4)
+| | |
+| --- | --- |
+| ![그릇의 레시피를 선택하는 화면](Ref/Portfolio/Representative/Failplay/15-recipe-selection-04m54s.png)<br>그릇의 레시피를 선택하는 화면 | ![조리 미니게임의 성공 판정 화면](Ref/Portfolio/Representative/Failplay/16-cooking-success-04m16s.png)<br>조리 미니게임의 성공 판정 화면 |
+
+[**\[플레이 영상\]**](https://youtu.be/p0TNChRhZu4)
+
+[**\[GitHub\] 클릭 시 이동**](https://github.com/jlfff0233-boop/PartysNotReady.git)
 
 [**\[빌드\] 구글 드라이브로 이동**](https://drive.google.com/file/d/1N-4cUHtk9XISCQZGb0Nqv67MsmXdwdZ5/view?usp=sharing)
-
-> 이 저장소는 구현 코드와 구조를 소개하는 포트폴리오용입니다. 외부 에셋 원본과 일부 모델·음원·파티클·패키지를 제외했으므로, 저장소만으로 Unity 프로젝트를 바로 실행할 수 없습니다. 실제 플레이는 위의 영상과 빌드에서 확인할 수 있습니다.
 
 ---
 
@@ -136,7 +138,7 @@ public bool TryComplete ( bool isCorrect )
 
 | **개폐 변칙 대응** | **회전 변칙 대응** |
 | --- | --- |
-| ![열린 상자에 대응해 변칙을 해결하는 플레이](Ref/Portfolio/Anomalies/openclose-play.gif) | ![기울어진 액자를 회전시켜 변칙을 해결하는 플레이](Ref/Portfolio/Anomalies/rotate-play.gif) |
+| ![열린 상자에 대응해 변칙을 해결하는 플레이](Ref/Portfolio/Anomalies/openclose-play.gif)<br>열린 상자에 대응해 변칙을 해결하는 플레이 | ![기울어진 액자를 회전시켜 변칙을 해결하는 플레이](Ref/Portfolio/Anomalies/rotate-play.gif)<br>기울어진 액자를 회전시켜 변칙을 해결하는 플레이 |
 
 ---
 
@@ -170,6 +172,8 @@ _globalCooldownUntil =
 
 ![Play Debug의 방별 Pressure·대기 시간·미방문 시간과 발생 그룹 상태](Ref/Portfolio/Screenshots/pressure-debug.png)
 
+Play Debug의 방별 Pressure·대기 시간·미방문 시간과 발생 그룹 상태
+
 ---
 
 ### 2-3. 서로 다른 대응을 요구하는 포식자 AI
@@ -194,6 +198,8 @@ _globalCooldownUntil =
 
 ![공통 Enemy의 상태 관리와 담비·여우의 행동 구성 및 기능 재사용](Ref/Portfolio/Diagrams/portfolio-enemy-structure-simple.svg)
 
+공통 Enemy의 상태 관리와 담비·여우의 행동 구성 및 기능 재사용
+
 공통 Enemy가 상태 실행과 전환을 관리하고, 담비와 여우는 필요한 State를 각각 등록합니다. 각 State는 해당 Enemy의 행동 메서드를 거쳐 필요한 기능 모듈을 사용합니다.
 
 #### Anomaly 결과와 Enemy 연결
@@ -213,19 +219,19 @@ _globalCooldownUntil =
 
 | **개 — 공 상호작용** | **개 — 던진 공 추적** |
 | --- | --- |
-| ![개가 물고 있는 공과 상호작용하는 장면](Ref/Portfolio/Enemies/dog-ball-take-04m30s.png) | ![던진 공을 따라가는 개](Ref/Portfolio/Enemies/dog-ball-chase-04m32s.png) |
+| ![개가 물고 있는 공과 상호작용하는 장면](Ref/Portfolio/Enemies/dog-ball-take-04m30s.png)<br>개가 물고 있는 공과 상호작용하는 장면 | ![던진 공을 따라가는 개](Ref/Portfolio/Enemies/dog-ball-chase-04m32s.png)<br>던진 공을 따라가는 개 |
 
 | **곰 — 분노 반응** | **곰 — 만족 반응** |
 | --- | --- |
-| ![곰의 분노 이펙트](Ref/Portfolio/Enemies/bear-anger-feedback.gif) | ![음식 수락 후 만족 바가 채워진 곰](Ref/Portfolio/Enemies/bear-satisfied-feedback.png) |
+| ![곰의 분노 이펙트](Ref/Portfolio/Enemies/bear-anger-feedback.gif)<br>곰의 분노 이펙트 | ![음식 수락 후 만족 바가 채워진 곰](Ref/Portfolio/Enemies/bear-satisfied-feedback.png)<br>음식 수락 후 만족 바가 채워진 곰 |
 
 | **까마귀 — 재료 운반** | **여우 — 포획된 NPC 구조** |
 | --- | --- |
-| ![확보한 재료를 운반하는 까마귀](Ref/Portfolio/Enemies/crow-carrying.png) | ![여우에게 포획된 NPC를 구조하는 장면](Ref/Portfolio/Enemies/fox-rescue-game.gif) |
+| ![확보한 재료를 운반하는 까마귀](Ref/Portfolio/Enemies/crow-carrying.png)<br>확보한 재료를 운반하는 까마귀 | ![여우에게 포획된 NPC를 구조하는 장면](Ref/Portfolio/Enemies/fox-rescue-game.gif)<br>여우에게 포획된 NPC를 구조하는 장면 |
 
 | **담비 — 공격 동작** | **담비 — 재료 운반·도주** |
 | --- | --- |
-| ![플레이어를 향해 공격하는 담비의 동작](Ref/Portfolio/Enemies/marten-attack.gif) | ![감자를 확보한 뒤 출입구로 도주하는 담비](Ref/Portfolio/Enemies/marten-carrying-escape.gif) |
+| ![플레이어를 향해 공격하는 담비의 동작](Ref/Portfolio/Enemies/marten-attack.gif)<br>플레이어를 향해 공격하는 담비의 동작 | ![감자를 확보한 뒤 출입구로 도주하는 담비](Ref/Portfolio/Enemies/marten-carrying-escape.gif)<br>감자를 확보한 뒤 출입구로 도주하는 담비 |
 
 ---
 
@@ -305,6 +311,8 @@ G는 출발점부터의 누적 연결 비용, H는 목표까지의 직선거리�
 
 ![NavMesh 연결 검사와 비용 구성부터 A* 경유 순서 계산 및 구간 이동까지의 Route 흐름](Ref/Portfolio/Diagrams/portfolio-route-flow.svg)
 
+NavMesh 연결 검사와 비용 구성부터 A\* 경유 순서 계산 및 구간 이동까지의 Route 흐름
+
 NavMesh로 통행 가능한 연결과 구간 길이를 구한 뒤, A\*가 경유 순서를 계산하고 NavMeshAgent가 각 구간을 이동합니다.
 
 연결 비용은 직선거리 대신 **NavMesh 경로의 꺾이는 지점 사이 길이 합**을 사용합니다. 부분 경로와 끝점이 맞지 않는 경로를 제외하고, A → B 통행 성공만으로 B → A 연결까지 가능하다고 가정하지 않습니다.
@@ -350,7 +358,7 @@ RouteGraph의 노드 배치와 연결 구조
 
 | **레시피 선택** | **완성 음식 배치** |
 | --- | --- |
-| ![레시피 선택 화면](Ref/Portfolio/Screenshots/recipe-selection.png) | ![완성 음식을 파티룸에 배치한 화면](Ref/Portfolio/Screenshots/party-food-placement.png) |
+| ![레시피 선택 화면](Ref/Portfolio/Screenshots/recipe-selection.png)<br>레시피 선택 화면 | ![완성 음식을 파티룸에 배치한 화면](Ref/Portfolio/Screenshots/party-food-placement.png)<br>완성 음식을 파티룸에 배치한 화면 |
 
 ---
 
@@ -367,6 +375,8 @@ RouteGraph의 노드 배치와 연결 구조
 #### 도식 — 이력과 현재 상태
 
 ![Mission 이력과 Preparation 현재 상태](Ref/Portfolio/Diagrams/portfolio-mission-preparation-refined.svg)
+
+Mission 이력과 Preparation 현재 상태
 
 일반 아이템 배치의 중복 키는 현재 단계를 포함해, **같은 단계의 재배치**와 **다음 단계에서 새로 수행한 직접 배치**를 구분합니다. 미션 이력과 현재 준비 상태를 모두 하나의 개수로 처리하지 않았습니다.
 
@@ -401,6 +411,8 @@ public bool TryComplete ( object key, bool succeeded )
 종료는 **입력 차단 → 상태 집계·결과 확정 → 월드 정리·결과 표시** 순서로 진행합니다. `GameFlowController`가 미션 입력과 신규 발생을 차단하고, `FinalizeAt`이 결과 입력을 닫아 종료 시점의 상태를 집계한 뒤 `GameResult`를 확정합니다. 미완료 대응은 성공·실패 집계에서 제외합니다.
 
 ![게임 종료 후 미션 완료 현황과 평가축별 점수·등급·코인 보상을 표시한 결과 화면](Ref/Portfolio/Screenshots/result-screen.png)
+
+게임 종료 후 미션 완료 현황과 평가축별 점수·등급·코인 보상을 표시한 결과 화면
 
 ---
 
@@ -537,7 +549,7 @@ if ( _planner.TryFind( startIndex, via, _route ) == false ||
 
 | **상점** | **난이도 선택** |
 | --- | --- |
-| ![아이템 목록과 가격·구매 수량 선택 화면](Ref/Portfolio/UI/shop-items.png) | ![난이도별 플레이 조건을 안내하는 선택 화면](Ref/Portfolio/UI/difficulty-selection.png) |
+| ![아이템 목록과 가격·구매 수량 선택 화면](Ref/Portfolio/UI/shop-items.png)<br>아이템 목록과 가격·구매 수량 선택 화면 | ![난이도별 플레이 조건을 안내하는 선택 화면](Ref/Portfolio/UI/difficulty-selection.png)<br>난이도별 플레이 조건을 안내하는 선택 화면 |
 
 ---
 
@@ -561,7 +573,11 @@ Inspector를 개별 조회하는 작업과 상황 재현을 줄이기 위해, **
 
 ![Anomaly Debug Inspector 실행 흐름](Ref/Portfolio/Diagrams/portfolio-debug-refined.svg)
 
+Anomaly Debug Inspector 실행 흐름
+
 ![Play Debug 사건 탭에서 발생 건별 상태·남은 시간·현재 각도와 해결 기준 조회](Ref/Portfolio/Anomalies/rotate-event-debug.png)
+
+Play Debug 사건 탭에서 발생 건별 상태·남은 시간·현재 각도와 해결 기준 조회
 
 ### 반복 설정 작업
 
@@ -570,6 +586,8 @@ Inspector를 개별 조회하는 작업과 상황 재현을 줄이기 위해, **
 - **Sound 설정 도구**: 행동별 음원과 공간·재생 설정을 확인하고 반복 연결 작업을 정리합니다.
 
 ![통합 임포터의 작업 목록과 데이터 연결·검사·적용 화면](Ref/Portfolio/Tools/data-importer-window.png)
+
+통합 임포터의 작업 목록과 데이터 연결·검사·적용 화면
 
 ### 플레이 테스트와 확인 범위
 
@@ -584,6 +602,8 @@ Inspector를 개별 조회하는 작업과 상황 재현을 줄이기 위해, **
 **디버그 조건 변경에 따른 HUD 갱신**
 
 ![디버그로 미션 진행과 Final Rush 조건을 변경했을 때의 HUD 갱신](Ref/Portfolio/UI/debug-mission-hud-update.gif)
+
+디버그로 미션 진행과 Final Rush 조건을 변경했을 때의 HUD 갱신
 
 검증 범위는 현재 구현된 **싱글플레이 흐름**을 기준으로 합니다. NPC 전원 이탈 테스트는 실제 NPC를 모두 이탈시킨 것이 아니라 종료 조건만 주입한 것으로, 실제 NPC 상태와 Safety 평가는 변경하지 않았습니다.
 
@@ -635,18 +655,18 @@ AI로 모델을 생성하는 시간과 원하는 형태로 완성하는 시간�
 
 ![최종 에셋 적용 후 회귀 검증 흐름](Ref/Portfolio/Diagrams/portfolio-regression-refined.svg)
 
+최종 에셋 적용 후 회귀 검증 흐름
+
 ---
 
 ## 7. 향후 개발 계획
 
-현재는 싱글플레이를 바탕으로 **NGO(Netcode for GameObjects)를 활용한 최대 4인 멀티플레이** 구현을 목표로 하고 있습니다. 대기 화면 개편과 방 생성·입장, 참가자 준비 및 게임 시작 흐름을 다음과 같이 계획했습니다.
+현재는 싱글플레이를 바탕으로 **NGO와 Relay를 활용한 4인 멀티플레이**를 개발하고 있습니다.
 
-- **모드 선택:** 싱글 / 멀티 선택 팝업을 추가하고, 멀티 선택 시 ‘방장 되기’ 토글을 활성화합니다.
-- **대기 화면:** 싱글은 기존 화면을 유지하되 대기 탭을 비활성화합니다. 멀티는 대기 탭을 활성화해 생성된 방 목록을 표시하고, 초대 코드로도 입장할 수 있도록 구성할 예정입니다.
-- **참가자 표시:** 방장은 별도 아이콘으로 구분하며, 한 방에서 최대 4인이 함께 플레이하도록 계획했습니다.
-- **게임 시작:** 참가자 전원이 시작 버튼을 누르면 게임을 시작합니다. 응답하지 않는 참가자로 인해 대기가 길어지는 상황을 줄이기 위해, 참가자의 과반수가 시작 버튼을 누르면 10초 후 자동으로 시작하는 규칙도 적용할 예정입니다.
-
-위 내용은 후속 개발 계획이며, 현재 포트폴리오에서 설명한 구현 범위는 싱글플레이입니다.
+- **멀티플레이 진행** — 방 생성·목록 조회·초대 코드 입장부터 게임 시작, 종료 후 같은 방 복귀까지 구현했습니다. 재고 동기화, 클릭·타이밍 제작, 완성 음식 배치와 공동 미션 집계도 멀티플레이에서 처리하도록 구성했습니다.
+- **남은 작업** — 4인 Relay에서 재료 수집·배치·재보충과 같은 방 재시작을 확인했습니다. 최신 제작·음식 배치·공동 미션은 실제 4인 입력으로 검증하고, 적·NPC·변칙 사건의 동기화와 결과·보상 처리를 마무리할 예정입니다.
+- **UI 개편** — 멀티플레이 구현 이후에는 PC 협동 플레이에 맞춰 로비와 인게임 UI를 개편할 예정입니다. 버튼과 패널이 차지하는 공간을 줄이고, 남은 시간과 공동 미션을 플레이 중 빠르게 확인할 수 있도록 배치하겠습니다.
+- **언어 설정** — 기존 한국어 문구를 한국어 옵션으로 등록하고 영어 번역을 추가해, 설정에서 한국어와 영어를 전환할 수 있도록 할 예정입니다.
 
 ---
 
@@ -657,18 +677,36 @@ AI로 모델을 생성하는 시간과 원하는 형태로 완성하는 시간�
 | 구분 | 출처 / 제작 방식 |
 | --- | --- |
 | 캐릭터 모델 | AI를 활용해 제작했으며, 제작 과정에서 Meshy AI와 Blender를 사용했습니다. |
-| 캐릭터 모델 텍스처 | 직접 제작한 모델용 텍스처를 사용했습니다. |
+| 캐릭터 모델 텍스처 | 캐릭터 모델 제작 과정에서 AI로 생성한 텍스처를 활용했습니다. |
 | 캐릭터 애니메이션 | [Mixamo — Adobe](https://www.mixamo.com/) |
 | 배경·가구 | [Low Poly Home Set — VNBP / Leo](https://vnbp.itch.io/low-poly-home-set)를 활용해 공간을 구성했습니다. |
 | 일부 가구·소품 | [Kenney](https://kenney.nl/assets) 제작 리소스. 원본 OBJ의 제작자 표기로 확인했습니다. |
+| 피크닉·장식 소품 | [Pleasant Picnic Set — Tiny Treats](https://tinytreats.itch.io/pleasant-picnic) |
+| 주방 소품 | [Cooking Assets — MilkAndBanana](https://opengameart.org/content/cooking-assets) |
+| 장식용 꽃 | [Low Poly Flower Pack — MCrafterzz](https://mcrafterzz.itch.io/low-poly-flower-pack) |
+| 꽃병 | [Tall Vase — Jarlan Perez](https://poly.pizza/m/52xZtzRG244) |
+
+제작용 시트에서 캐릭터의 비율과 실루엣을 잡고, Meshy AI로 생성한 모델을 참고해 Blender에서 작업했습니다. 토끼·여우·담비는 새로 모델링했고, 개와 곰은 생성 모델을 바탕으로 형태와 표면을 다듬었습니다. 까마귀는 날개를 접고 펼 수 있도록 제작했습니다. 모델 제작 과정에서 AI로 생성한 텍스처를 캐릭터의 색상과 무늬에 활용했습니다. 플레이어가 수집하는 재료 13종과 조리로 완성하는 요리 10종의 3D 모델을 Blender에서 제작했습니다.
+
+| | |
+| --- | --- |
+| ![토끼 모델의 비율과 실루엣을 잡는 데 사용한 제작용 턴어라운드 시트](Ref/Portfolio/Models/Rabbit_TurnAroundSheet.png)<br>토끼 모델의 비율과 실루엣을 잡는 데 사용한 제작용 턴어라운드 시트 | ![캐릭터 모델 6종](Ref/Portfolio/Models/Character_Models_Lineup.png)<br>캐릭터 모델 6종 |
+
+![토끼 캐릭터와 요리 10종·재료 13종의 크기 비교](Ref/Portfolio/Models/Player_Scale.png)
+
+토끼 캐릭터와 요리 10종·재료 13종의 크기 비교
 
 ### UI·글꼴
 
 | 구분 | 출처 / 제작 방식 |
 | --- | --- |
 | UI 버튼·패널 | [Free Pro UI Light Minimalism — Wenrexa](https://wenrexa.itch.io/uilight)의 Green 버전 |
-| UI 아이콘 | 직접 제작 |
+| UI 아이콘 | AI로 생성한 아이콘 시트를 Photoshop에서 개별 이미지로 분리하고 크기를 정리했습니다. 형태가 어긋난 아이콘은 직접 보정했습니다. |
 | 글꼴 | [Gmarket Sans — G마켓](https://news.gmarket.com/fonts/) |
+
+![서포트 아이템·설정·조작 안내에 사용한 UI 아이콘](Ref/Portfolio/UI/UI_Icons_Portfolio_Preview.png)
+
+서포트 아이템·설정·조작 안내에 사용한 UI 아이콘
 
 ### 파티클·이펙트
 
